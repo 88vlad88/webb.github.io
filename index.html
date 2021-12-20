@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes</title>
+    <link href="css/cakesandmore.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <span>Cakes and more</span>
+    </header>
+    <div class="wrapper">
+        <nav style="text-align: center;">
+            <div style="text-align: start;" class="calories">
+                <input type="radio" name="calories" id="0300">
+                <label for="0300">0-300 calories</label><br>
+                <input type="radio" name="calories" id="300600">
+                <label for="300600">300-600 calories</label><br>
+                <input type="radio" name="calories" id="600p">
+                <label for="600p">600+ calories</label><br><br>
+            </div>
+            <div>
+                <button type="button"><label for="pyrig">Пиріг</label></button>
+                <button type="button"><label for="rulet">Рулет</label></button>
+                <button type="button"><label for="syrnik">Сирник</label></button>
+                <button type="button"><label for="tistechko">Тістечко</label></button>
+                <button type="button"><label for="tort">Торт</label></button>
+                <button type="button"><label for="all">Всі варіанти</label></button>
+            </div>
+        </nav>
+        <main>
+            <input type="radio" name="types" id="pyrig">
+            <input type="radio" name="types" id="rulet">
+            <input type="radio" name="types" id="syrnik">
+            <input type="radio" name="types" id="tistechko">
+            <input type="radio" name="types" id="tort">
+            <input type="radio" name="types" id="all" checked>
+            <div class="card tort">
+                <div class="imgnname">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROZSA4m8nj465qILTOPySCy9xSeW2p8LDjvA&usqp=CAU"
+                        alt="picture" class="img">
+                    <div>Торт:<br><strong>Сладкий сон</strong></div>
+                </div>
+                <hr>
+                <span>283 кКал</span>
+            </div>
+            <div class="card tistechko">
+                <div class="imgnname">
+                    <img src="https://static-sl.insales.ru/images/products/1/3620/193695268/_MG_3011.jpg"
+                        alt="picture" class="img">
+                    <div>Тістечко:<br><strong>Шу</strong></div>
+                </div>
+                <hr>
+                <span>335 кКал</span>
+            </div>
+            <div class="card syrnik">
+                <div class="imgnname">
+                    <img src="https://smachno.ua/wp-content/uploads/2018/08/22/Depositphotos_161565786_m-2015.jpg"
+                        alt="picture" class="img">
+                    <div>Cирники:<br><strong>з манкою</strong></div>
+                </div>
+                <hr>
+                <span>283 кКал</span>
+            </div>
+            <div class="card tort">
+                <div class="imgnname">
+                    <img src="https://gotovim-doma.ru/images/recipe/3/61/36158f7882a66ed9f5c231d1ee400232_l.jpg"
+                        alt="picture" class="img">
+                    <div>Торт:<br><strong>Стаканчиковий</strong></div>
+                </div>
+                <hr>
+                <span>563 кКал</span>
+            </div>
+            <div class="card rulet">
+                <div class="imgnname">
+                    <img src="https://www.koolinar.ru/all_image/recipes/144/144075/recipe_123be296-e7b1-4344-8969-52cadf934dbb_w450.jpg"
+                        alt="picture" class="img">
+                    <div>Рулет:<br><strong>Бисквитный с малиной</strong></div>
+                </div>
+                <hr>
+                <span>470 кКал</span>
+            </div>
+            <div class="card pyrig">
+                <div class="imgnname">
+                    <img src="http://picantecooking.com/upload/iblock/a48/klasichniy_vishneviy_pirig.JPG"
+                        alt="picture" class="img">
+                    <div>Пиріг:<br><strong>Вишневий</strong></div>
+                </div>
+                <hr>
+                <span>298 кКал</span>
+            </div>
+            <div class="card tort">
+                <div class="imgnname">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="picture" class="img">
+                    <div>Торт:<br><strong>Сливочний</strong></div>
+                </div>
+                <hr>
+                <span>590 кКал</span>
+            </div>
+            <div class="card tistechko">
+                <div class="imgnname" class="img">
+                    <img src="https://lh3.googleusercontent.com/proxy/XpkHN80Fzcpr53lpeIclh4t4fXwdSX6vz0aUI62-PjaojP2yQ7qqq6asgSO7dK4R5ZhIGWxTAN7F_0-2fkZn2pnKjRb51N0niJBoAJtQiIro7oR_nN8OSzNPvV-K"
+                        alt="picture">
+                    <div>Тістечко:<br><strong>Солодка Скриня</strong></div>
+                </div>
+                <hr>
+                <span>478 кКал</span>
+            </div>
+            <div class="card tistechko">
+                <div class="imgnname" class="img">
+                    <img src="https://static-sl.insales.ru/images/products/1/3546/193695194/_MG_2905.jpg"
+                        alt="picture">
+                    <div>Тістечко:<br><strong>Князь Волконський</strong></div>
+                </div>
+                <hr>
+                <span>325 кКал</span>
+            </div>
+        </main>
+    </div>
+    <div class="copyright">
+        <div class="contact">
+            <span>
+                Контакти:
+            </span>
+            <a href="mailto:tortik@smakota.com" style="color: rgba(0, 0, 255, 0.795);">
+                tortik@smakota.com
+            </a>
+        </div>
+        <span class="right">
+            &copy; 2021 Smakota
+        </span>
+    </div>
+</body>
+
+</html>

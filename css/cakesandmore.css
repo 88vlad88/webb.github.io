@@ -1,0 +1,129 @@
+html{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.wrapper{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+.imgnname{
+    display: flex;
+    height: 220px;
+    margin: 15px;
+}
+.imgnname div{
+    float: none;
+}
+body *{
+    border-radius: 15px;
+    border-color: white;
+}
+header{
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+}
+main{
+    width: 80vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+main input{
+    display: none;
+}
+div.card{
+    background-color: rgb(68, 0, 0);
+    width: 25vw;
+    height: 350px;
+    margin-top: 3em;
+}
+div.card img{
+    width: 12vw;
+    height: 200px;
+    float: left;
+}
+nav{
+    background-color: lightgray;
+    width: 15vw;
+    justify-content: right;
+    background-color: black;
+    color: white;
+}
+
+div.card:hover{
+    box-shadow: 5px 5px 10px rgb(255, 255, 255);
+}
+
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+
+input#pyrig:checked ~ div.card:not(.pyrig),
+input#rulet:checked ~ div.card:not(.rulet),
+input#syrnik:checked ~ div.card:not(.syrnik),
+input#tistechko:checked ~ div.card:not(.tistechko),
+input#tort:checked ~ div.card:not(.tort){
+    display: none;
+}
+
+@media (max-width: 1200px){
+    div.card > :not(div.imgnname),
+    div.calories{
+        display: none;
+    }
+    div.card{
+        height: 250px;
+        margin-bottom: 5rem;
+    }
+    .wrapper{
+        display: block;
+    }
+    nav,
+    main{
+        width: 100%;
+    }
+    nav{
+        background-color: initial;
+    }
+    .imgnname{
+        display: inline-block;
+    }
+    div.card img{
+        width: 20vw;
+    }
+    .contact *{
+        display: block;
+    }
+    .copyright a::before{
+        content: "✉";
+    }
+}
+@media (max-width: 730px){
+    div.card div.imgnname div{
+        display: none;
+    }
+    div.card{
+        height: 300px;
+        width: 95vw;
+        margin-bottom: 10rem;
+    }
+    main{
+        display: inline;
+    }
+    div.card img{
+        width: 90vw;
+        height: 275px;
+    }
+    .copyright{
+        justify-content:start;
+        flex-flow: column wrap;
+    }
+}
